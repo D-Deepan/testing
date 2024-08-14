@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0); 
+}
+
+.topmargin {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    background-color: rgba(255, 73, 49, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topmargin h1 {
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.topmargin p {
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* Eclipse Section */
+.eclipse {
+    padding: 20px;
+    text-align: center;
+}
+
+.eclipse h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 20px;
+    color: white;
+}
+
+.grid-item img {
+    max-width: 90%;
+    max-height:250px;
+    margin: 20px;
+    border: 2px solid rgb(47, 47, 47);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.eclipse h2 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #E74C3C;
+}
+.main  {
+        max-width: 100%;
+        height: auto;
+        display: block;}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+    padding: 20px;
+
+}
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 660px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.grid-item {
+    background-color: #2a2a2a; 
+    border: 1px solid #454545; 
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px; 
+}
+.grid-item h1{
+    margin:-5px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: auto;
+}
+
+.grid-item:hover {
+    background-color: #363636; 
+    cursor: pointer;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.left p, .right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.left .icon {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.left .part-number {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.right .price {
+    font-size: 10px;
+    color: #E74C3C;
+}
+
+.right .price span {
+    font-size: 30px;
+    font-weight: bold;
+}
